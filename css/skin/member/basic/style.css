@@ -1,0 +1,475 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+/* ### 기본 스타일 커스터마이징 시작 ### */
+
+/* 버튼 */
+.mbskin a.btn01 {}
+.mbskin a.btn01:focus, .mbskin .btn01:hover {}
+.mbskin a.btn02 {}
+.mbskin a.btn02:focus, .mbskin .btn02:hover {}
+.mbskin .btn_confirm {} /* 서식단계 진행 */
+.mbskin .btn_submit {}
+.mbskin button.btn_submit {}
+.mbskin fieldset .btn_submit {}
+.mbskin .btn_cancel {}
+.mbskin button.btn_cancel {}
+.mbskin .btn_cancel:focus, .mbskin .btn_cancel:hover {}
+.mbskin a.btn_frmline, .mbskin button.btn_frmline {} /* 우편번호검색버튼 등 */
+.mbskin button.btn_frmline {}
+.mbskin .win_btn {} /* 새창용 */
+.mbskin .win_btn button {}
+.mbskin .win_btn input {}
+.mbskin .win_btn a {}
+.mbskin .win_btn a:focus, .mbskin .win_btn a:hover {}
+/* 게시판용 버튼 */
+.mbskin a.btn_b01 {}
+.mbskin a.btn_b01:focus, .mbskin .btn_b01:hover {}
+.mbskin a.btn_b02 {}
+.mbskin a.btn_b02:focus, .mbskin .btn_b02:hover {}
+.mbskin a.btn_admin {} /* 관리자 전용 버튼 */
+.mbskin a.btn_admin:focus, .mbskin a.btn_admin:hover {}
+
+/* 기본테이블 */
+.mbskin .tbl_head01 {}
+.mbskin .tbl_head01 caption {}
+.mbskin .tbl_head01 thead th {}
+.mbskin .tbl_head01 thead a {}
+.mbskin .tbl_head01 thead th input {} /* middle 로 하면 게시판 읽기에서 목록 사용시 체크박스 라인 깨짐 */
+.mbskin .tbl_head01 tfoot th {}
+.mbskin .tbl_head01 tfoot td {}
+.mbskin .tbl_head01 tbody th {}
+.mbskin .tbl_head01 td {}
+.mbskin .tbl_head01 a {}
+.mbskin td.empty_table {}
+
+/* 폼 테이블 */
+.mbskin table {}
+.mbskin caption {}
+.mbskin .frm_info {}
+.mbskin .frm_file {}
+
+.mbskin .tbl_frm01 {}
+.mbskin .tbl_frm01 th {width:85px;}
+.mbskin .tbl_frm01 td {}
+.mbskin .tbl_frm01 textarea, .mb_skin tbl_frm01 .frm_input {}
+.mbskin .tbl_frm01 textarea {}
+/*
+.mbskin .tbl_frm01 #captcha {}
+.mbskin .tbl_frm01 #captcha input {}
+*/
+.mbskin .tbl_frm01 a {}
+
+/* 필수입력 */
+.mbskin .required, .mbskin textarea.required {}
+
+/* 테이블 항목별 정의 */
+.mbskin .td_board {}
+.mbskin .td_chk {}
+.mbskin .td_date {}
+.mbskin .td_datetime {}
+.mbskin .td_group {}
+.mbskin .td_mb_id {}
+.mbskin .td_mng {}
+.mbskin .td_name {}
+.mbskin .td_nick {}
+.mbskin .td_num {}
+.mbskin .td_numbig {}
+
+.mbskin .txt_active {}
+.mbskin .txt_expired {}
+
+/* ### 기본 스타일 커스터마이징 끝 ### */
+
+/* 회원가입 약관
+#fregister section {margin:0 0 20px;padding:20px 0}
+#fregister h2 {margin:0 0 20px;text-align:center}
+#fregister textarea {display:block;margin-bottom:10px;padding:5px;width:98%;height:150px;border:1px solid #e9e9e9;background:#f7f7f7}
+#fregister .fregister_agree {padding:10px 0 0;text-align:right}
+#fregister .fregister_agree label {display:inline-block;margin-right:5px}
+#fregister p {color:#e8180c;text-align:center}
+#fregister .btn_confirm {margin-bottom:20px}
+#fregister_private .tbl_head01 th{;text-align:center;border:1px solid #d1dee2;width:33%}
+#fregister_private .tbl_head01 td {border:1px solid #e9e9e9}
+#fregister_private .tbl_head01 caption{position:absolute;font-size:0;line-height:0;overflow:hidden}
+*/
+
+
+/* 회원가입 입력 */
+#fregisterform textarea {height:50px}
+
+#fregisterform #msg_certify {margin:5px 0 0;padding:5px;border:1px solid #dbecff;background:#eaf4ff;text-align:center}
+
+#fregisterform .frm_address {margin:5px 0 0}
+#fregisterform #mb_addr3 {display:inline-block;margin:5px 0 0;vertical-align:middle}
+#fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
+
+/* 회원가입 완료
+#reg_result {padding:50px 0 0}
+#reg_result #result_email {margin:20px 0;padding:10px 50px;border-top:1px solid #e9e9e9;border-bottom:1px solid #dde4e9;background:#fff;line-height:2em}
+#reg_result #result_email span {display:inline-block;width:150px}
+#reg_result #result_email strong {color:#e8180c;font-size:1.2em}
+#reg_result #result_coupon {margin:20px 0;padding:10px 50px;border-top:1px solid #e9e9e9;border-bottom:1px solid #dde4e9;background:#fff;line-height:2em}
+#reg_result #result_coupon strong {color:#ff3061;font-weight:normal}
+#reg_result p {line-height:1.8em}
+#reg_result .btn_confirm {margin:50px 0}
+*/
+
+/* 아이디/비밀번호 찾기
+#find_info #mb_hp_label {display:inline-block;margin-left:10px}
+#find_info #info_fs {margin:0 20px 20px;padding:0;background:#fff}
+#find_info #info_fs .frm_input {width:70%}
+#find_info p {margin:0 0 10px;line-height:1.8em}
+#find_info #captcha {margin:0 20px}
+
+ */
+/* 로그인
+#mb_login {margin:0 auto;padding:100px 0;width:500px}
+#mb_login h1 {margin:0 0 20px;font-size:1.3em}
+#mb_login h2 {margin:0}
+#mb_login p {padding:10px 0;line-height:1.5em}
+#mb_login #login_fs {position:relative;margin:0;padding:20px 20px 20px 95px;border:1px solid #cfded8;border-bottom:0;background:#fff}
+#mb_login #login_fs legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+#mb_login #login_fs label {letter-spacing:-0.1em}
+#mb_login #login_fs .login_id {position:absolute;top:26px;left:95px}
+#mb_login #login_fs .login_pw {position:absolute;top:52px;left:95px}
+#mb_login #login_fs .frm_input {display:block;margin:0 0 5px 80px;width:162px}
+#mb_login #login_fs .btn_submit {position:absolute;top:20px;right:95px;width:60px;height:53px}
+#mb_login #login_info {margin:0 0 30px;padding:20px;border:1px solid #cfded8;background:#f5f6fa}
+#mb_login #login_info div {text-align:right}
+
+#mb_login_notmb {position:relative;margin:0 0 20px;padding:20px;border:1px solid #cfded8;background:#fff}
+#mb_login_notmb #guest_privacy {margin:0 0 10px;padding:10px;height:150px;border:1px solid #e9e9e9;overflow:auto}
+#mb_login_notmb .btn_confirm {padding:10px 0 0}
+
+#mb_login_od {position:relative;margin:0;padding:20px 20px 20px 95px;border:1px solid #cfded8;border-bottom:0;background:#fff}
+#mb_login_od legend {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#mb_login_od label {letter-spacing:-0.1em}
+#mb_login_od .od_id {position:absolute;top:26px;left:95px}
+#mb_login_od .od_pwd {position:absolute;top:52px;left:95px}
+#mb_login_od .frm_input {display:block;margin:0 0 5px 80px}
+#mb_login_od .btn_submit {position:absolute;top:20px;left:335px;width:52px;height:49px}
+#mb_login_odinfo {margin:0 0 30px;padding:20px;border:1px solid #cfded8;background:#f5f6fa}
+#mb_login_odinfo div {text-align:right}
+*/
+
+/* 쪽지 */
+#memo_view_contents {margin:0 auto 20px;width:90%}
+#memo_view_contents h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#memo_view_ul {margin:0;padding:0 0 10px;border-bottom:1px solid #eee;list-style:none}
+.memo_view_li {position:relative;padding:5px 0}
+.memo_view_subj {display:inline-block;width:65px}
+#memo_view p {padding:10px 0;min-height:150px;height:auto !important;height:150px;background:#fff;line-height:1.8em}
+
+#memo_write textarea {height:100px}
+
+/* 스크랩 */
+#scrap_do table {margin:0 0 10px;width:100%}
+#scrap_do textarea {height:100px}
+
+/* 회원 비밀번호 확인 */
+#mb_confirm {margin:0 auto;padding:100px 0;width:500px}
+#mb_confirm h1 {margin:0 0 20px;font-size:1.3em}
+#mb_confirm p {padding:20px;border:1px solid #dde4e9;border-bottom:0;background:#fff}
+#mb_confirm p strong {display:block}
+#mb_confirm fieldset {margin:0 0 30px;padding:30px 0;border:1px solid #e9e9e9;background:#f5f6fa;text-align:center}
+#mb_confirm fieldset .frm_input {background-color:#fff !important}
+#mb_confirm label {letter-spacing:-0.1em}
+#mb_confirm_id {display:inline-block;margin-right:20px;font-weight:bold}
+
+#member_confirm_sns{margin-top:35px}
+.member_confirm_sns ul{display:table;width:100%}
+.member_confirm_sns ul:after{display:block;clear:both;content:""}
+.member_confirm_sns ul li{position:relative;display:table-cell;width:33.33%;padding:20px 10px 20px 65px;border:1px solid #9fa0a0;border-left:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.member_confirm_sns ul li a{display:block;font-size:15px;color:#495057;line-height:18px;text-align:left}
+.member_confirm_sns ul li:first-of-type{border-left:1px solid #9fa0a0}
+.member_confirm_sns ul li img{position:absolute;left:20px;top:22px}
+
+/* 회원 비밀번호 확인 태블릿 -----------------------------------------------------------------*/
+@media (max-width:992px){
+#member_confirm_sns{margin-top:35px}
+.member_confirm_sns ul{display:table;width:100%}
+.member_confirm_sns ul:after{display:block;clear:both;content:""}
+.member_confirm_sns ul li{position:relative;display:table-cell;width:33.33%;padding:20px 10px 20px 65px;border:1px solid #9fa0a0;border-left:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.member_confirm_sns ul li a{font-size:15px;color:#495057;line-height:18px}
+.member_confirm_sns ul li:first-of-type{border-left:1px solid #9fa0a0}
+.member_confirm_sns ul li img{position:absolute;left:20px;top:22px}
+}
+/* 회원 비밀번호 확인 모바일-----------------------------------------------------------------*/
+@media (max-width:768px){
+#member_confirm_sns{margin-top:35px;padding:0 15px}
+.member_confirm_sns ul{display:table;width:100%}
+.member_confirm_sns ul:after{display:block;clear:both;content:""}
+.member_confirm_sns ul li{position:relative;display:block;width:100%;padding:15px 10px;text-align:center;border:1px solid #ededed;border-top:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.member_confirm_sns ul li:first-of-type{border-top:1px solid #ededed}
+.member_confirm_sns ul li a{font-size:15px;color:#495057;line-height:18px}
+.member_confirm_sns ul li:first-of-type{border-left:1px solid #ededed}
+.member_confirm_sns ul li img{position:static;left:auto;top:auto;padding-right:20px;width:30px}
+}
+
+
+/* 비밀글 비밀번호 확인 */
+#pw_confirm {margin:0 auto;padding:100px 0;width:500px}
+#pw_confirm h1 {margin:0 0 20px;font-size:1.3em}
+#pw_confirm p {padding:20px;border:1px solid #dde4e9;border-bottom:0;background:#fff}
+#pw_confirm p strong {display:block}
+#pw_confirm fieldset {margin:0 0 30px;padding:30px 0;border:1px solid #e9e9e9;background:#f5f6fa;text-align:center}
+#pw_confirm fieldset .frm_input {background-color:#fff !important}
+#pw_confirm label {letter-spacing:-0.1em}
+#pw_confirm_id {display:inline-block;margin-right:20px;font-weight:bold}
+
+/* 폼메일 */
+#formmail #subject {width:386px}
+#formmail textarea {height:100px}
+
+/* 자기소개 */
+#profile table {margin-bottom:0}
+#profile section {margin:0 auto 20px;padding:20px;width:86%}
+
+#profile h2 {margin:0}
+
+
+/* 171207 - 회원스킨 커스터마이징 */
+
+/* 회원가입 -----------------------------------------------------------------*/
+#fregister section {margin:35px 0 0}
+#fregister section .cont_tit{position:relative;margin-bottom:15px;padding-left:18px;font-size:20px;font-weight:500;color:#212529}
+#fregister section .cont_tit:before{position:absolute;left:0;top:50%;margin-top:-5px;width:10px;height:10px;background:#ffe066;content:""}
+#fregister section:first-of-type{margin:0}
+#fregister textarea {display:block;padding:20px;width:100%;height:130px;border:1px solid #9fa0a0;color:#414141;background:#fbfbfb}
+#fregister .fregister_agree {margin-top:15px;text-align:left;line-height:16px;font-size:14px;color:#495057}
+#fregister #fregister_all {padding:32px 0;line-height:16px;text-align:center;font-size:16px;color:#495057;border:1px solid #9fa0a0;background:#fbfbfb}
+#fregister .btn_confirm {margin-top:40px}
+
+#fregister input[type=checkbox]{display:none}
+#fregister input[type=checkbox] + label{position:relative;padding-left:23px;cursor:pointer}
+#fregister input[type=checkbox] + label:before{position:absolute;left:0;top:50%;margin-top:-8px;width:16px;height:16px;vertical-align:middle;background:url(../../../img/icon_checkbox.gif) no-repeat;content:""}
+#fregister input[type=checkbox] + label + label{}
+#fregister input[type=checkbox]:checked + label:before{background:url(../../../img/icon_checkbox_chk.gif) no-repeat}
+
+/* 회원가입 태블릿 -----------------------------------------------------------------*/
+@media (max-width:992px){
+.mbskin{padding:0 15px}
+}
+
+/* 회원가입 모바일 -----------------------------------------------------------------*/
+@media (max-width:768px){
+#fregister section .cont_tit{position:relative;margin-bottom:10px;padding-left:18px;font-size:18px;font-weight:500;color:#212529}
+#fregister #fregister_all {padding:20px 0;line-height:15px;text-align:center;font-size:15px}
+#fregister .btn_confirm {margin-top:40px;text-align:center}
+#fregister .btn_confirm a,
+#fregister .btn_confirm input{display:inline-block;min-width:130px;width:45%}
+
+#fregister .fregister_agree {margin-top:15px;text-align:left;line-height:16px;font-size:13px;color:#495057}
+}
+
+/* 회원정보 입력 폼 */
+.tb_mb{}
+.tb_mb table{width:100%;border-collapse:collapse;border-top:2px solid #9b784c}
+.tb_mb table caption{display:none}
+.tb_mb table td,
+.tb_mb table th{font-weight:400;border-bottom:1px solid #e6e9f0}
+.tb_mb table th{width:160px;padding:28px 0;line-height:14px;text-align:left;text-indent:18px;font-size:15px;color:#9fa0a0;background:#f9f9f9}
+.tb_mb table td{line-height:36px;padding:17px 0 17px 25px}
+.tb_mb table td input.frm_input{width:280px;height:36px;text-indent:10px;border:1px solid #9fa0a0;background:#fbfbfb}
+#captcha #captcha_img{border:1px solid #9fa0a0}
+#captcha button{border:1px solid #9fa0a0 !important}
+#captcha #captcha_reload{border-top:none !important}
+#captcha #captcha_key{width:180px;height:62px;border:1px solid #9fa0a0}
+#captcha #captcha_info{margin-top:8px;line-height:16px;font-size:14px;color:#9fa0a0}
+#fregisterform .btn_confirm {margin-top:40px}
+#meg_mb_id{font-size:14px;color:#9b784c}
+#overlap_id{display:inline-block;vertical-align:middle;padding:0 10px;;color:#fff;line-height:36px;background:#414141}
+
+/* 회원정보 입력 폼  태블릿 -----------------------------------------------------------------*/
+
+/* 회원정보 입력 폼  모바일 -----------------------------------------------------------------*/
+@media (max-width:768px){
+.tb_mb{}
+.tb_mb table{width:100%;border-collapse:collapse;border-top:2px solid #9b784c}
+.tb_mb table caption{display:none}
+.tb_mb table td,
+.tb_mb table th{font-weight:400;border-bottom:1px solid #e6e9f0}
+.tb_mb table th{width:120px;padding:10px 0;line-height:14px;text-align:left;text-indent:13px;font-size:13px;color:#9fa0a0;background:#f9f9f9}
+.tb_mb table td{line-height:30px;padding:10px 0 10px 15px}
+.tb_mb table td input.frm_input{display:block;width:100%;height:30px;text-indent:10px;border:1px solid #d2d2d2;background:#fbfbfb}
+#captcha #captcha_img{border:1px solid #9fa0a0}
+#captcha button{border:1px solid #9fa0a0 !important}
+#captcha #captcha_reload{border-top:none !important}
+#captcha #captcha_key{width:180px;height:62px;border:1px solid #9fa0a0}
+#captcha #captcha_info{margin-top:8px;line-height:16px;font-size:14px;color:#9fa0a0}
+#fregisterform .btn_confirm {margin-top:40px}
+#meg_mb_id{font-size:14px;color:#9b784c}
+
+#fregisterform .btn_confirm {margin-top:40px;text-align:center}
+#fregisterform .btn_confirm a,
+#fregisterform .btn_confirm input{display:inline-block;min-width:130px;width:45%}
+#overlap_id{display:block;margin:5px 0 0 0;}
+}
+
+
+/* 회원가입 완료 */
+.welcome_tit{margin-top:0;text-align:center}
+#reg_result{width:580px;margin:0 auto}
+.welcome{padding:30px 0 0;text-align:center}
+.welcome img{display:block;margin:0 auto 30px}
+.welcome span{font-size:20px;color:#212529}
+.welcome p{font-size:26px;color:#9b794e}
+.welcome_btm{margin:55px auto 30px;border-top:1px solid #e6e9f0;border-bottom:1px solid #e6e9f0}
+.welcome_btm p{display:table-cell;width:50%;height:40px;margin:0;padding:0;text-align:center;vertical-align:middle;font-size:14px;color:#495057}
+.welcome_btm a{margin-top:30px}
+.welcome_btm_inner{padding:20px 0;text-align:center}
+.welcome_btm_inner:after{display:block;clear:both;content:""}
+.welcome_btm_inner div{position:relative;float:left;width:50%;padding:20px 0}
+.welcome_btm_inner div:first-of-type:after{position:absolute;right:0;top:0;bottom:0;border-right:1px dotted #e6e9f0;content:""}
+#reg_result .btn_confirm {margin:50px 0}
+
+/* 회원가입 완료 태블릿 -----------------------------------------------------------------*/
+
+/* 회원가입 완료 모바일 -----------------------------------------------------------------*/
+@media (max-width:768px){
+.welcome_tit{margin-top:0;text-align:center}
+#reg_result{width:auto;margin:0 auto;padding:0 15px}
+.welcome{padding:30px 0 0;text-align:center}
+.welcome img{display:block;margin:0 auto 30px}
+.welcome span{font-size:18px}
+.welcome p{font-size:21px;color:#9b794e}
+.welcome_btm{margin:35px auto 30px;border-top:1px solid #e6e9f0;border-bottom:1px solid #e6e9f0}
+.welcome_btm p{display:block;width:100%;height:auto;margin:0;padding:0;text-align:center;vertical-align:middle;font-size:14px;color:#495057}
+.welcome_btm a{display:block;margin:30px auto 0;max-width:300px;width:100%}
+.welcome_btm_inner{padding:20px 0;text-align:center}
+.welcome_btm_inner:after{display:block;clear:both;content:""}
+.welcome_btm_inner div{position:relative;float:left;width:100%;padding:20px 0}
+.welcome_btm_inner div:first-of-type:after{border-right:0px dotted #e6e9f0}
+.welcome_btm_inner div:first-of-type{border-bottom:1px dotted #e6e9f0}
+#reg_result .btn_confirm {margin:50px 0}
+}
+
+/* 로그인 -----------------------------------------------------------------*/
+#mb_login {margin:0 auto;padding-top:0;width:580px}
+#mb_login #login_fs {position:relative;margin:0}
+#mb_login #login_fs > input[type=text],
+#mb_login #login_fs > input[type=password]{display:block;width:100%;height:50px;text-indent:15px;font-size:15px;border:0;border-bottom:1px solid #212529;background:#fff !important}
+#mb_login #login_fs .login_id {}
+#mb_login #login_fs .login_pw {margin-top:40px}
+#mb_login #login_fs .frm_input {}
+#mb_login #login_fs .btn_submit{width:100%;line-height:80px;margin:40px 0 0 0;padding:0;border-radius:0;font-size:24px;color:#212529}
+#mb_login .login_auto{margin-top:15px;font-size:18px;color:#495057}
+#mb_login input[type=checkbox]{display:none}
+#mb_login input[type=checkbox] + label{position:relative;padding-left:23px;cursor:pointer}
+#mb_login input[type=checkbox] + label:before{position:absolute;left:0;top:50%;margin-top:-8px;width:16px;height:16px;vertical-align:middle;background:url(../../../img/icon_checkbox.gif) no-repeat;content:""}
+#mb_login input[type=checkbox] + label + label{}
+#mb_login input[type=checkbox]:checked + label:before{background:url(../../../img/icon_checkbox_chk.gif) no-repeat}
+
+#login_sns{margin-top:35px;width:580px;margin:35px auto 0}
+.login_sns_inner{margin:0 auto}
+.login_sns_inner ul{display:table;width:100%}
+.login_sns_inner ul:after{display:block;clear:both;content:""}
+.login_sns_inner ul li{position:relative;display:table-cell;width:33.33%;padding:20px 10px 20px 65px;border:1px solid #9fa0a0;border-left:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.login_sns_inner ul li a{display:block;font-size:15px;color:#495057;line-height:18px}
+.login_sns_inner ul li:first-of-type{border-left:1px solid #9fa0a0}
+.login_sns_inner ul li img{position:absolute;left:20px;top:22px}
+
+#login_btm{margin-top:35px}
+.login_btm_inner{text-align:center}
+.login_btm_inner ul li{position:relative;display:inline-block;padding-left:7px;margin-left:7px}
+.login_btm_inner ul li:first-of-type{margin-left:0;padding-left:0;}
+.login_btm_inner ul li:first-of-type:before{position:absolute;right:0;top:50%;margin-top:-8px;margin-right:-10px;width:1px;height:16px;background:#e6e9f0;content:""}
+.login_btm_inner ul li a{display:block;font-size:18px;color:#9fa0a0}
+.mem_time{margin-top:5px;text-align:center;font-size:16px;color:#9fa0a0;text-decoration:underline}
+.br_pc{display:block}
+
+/* 로그인 태블릿 -----------------------------------------------------------------*/
+@media (max-width:992px){
+#mb_login {margin:0 auto;padding-top:0;width:580px}
+#mb_login #login_fs {position:relative;margin:0}
+#mb_login #login_fs > input[type=text],
+#mb_login #login_fs > input[type=password]{display:block;width:100%;height:50px;text-indent:15px;font-size:15px;border:0;border-bottom:1px solid #212529;background:#fff !important}
+#mb_login #login_fs .login_id {}
+#mb_login #login_fs .login_pw {margin-top:40px}
+#mb_login #login_fs .frm_input {}
+#mb_login #login_fs .btn_submit{width:100%;line-height:80px;margin:40px 0 0 0;padding:0;border-radius:0;font-size:24px;color:#212529}
+#mb_login .login_auto{margin-top:15px;font-size:18px;color:#495057}
+#mb_login input[type=checkbox]{display:none}
+#mb_login input[type=checkbox] + label{position:relative;padding-left:23px;cursor:pointer}
+#mb_login input[type=checkbox] + label:before{position:absolute;left:0;top:50%;margin-top:-8px;width:16px;height:16px;vertical-align:middle;background:url(../../../img/icon_checkbox.gif) no-repeat;content:""}
+#mb_login input[type=checkbox] + label + label{}
+#mb_login input[type=checkbox]:checked + label:before{background:url(../../../img/icon_checkbox_chk.gif) no-repeat}
+
+#login_sns{margin-top:35px;width:580px;margin:35px auto 0}
+.login_sns_inner ul{display:table;width:100%}
+.login_sns_inner ul:after{display:block;clear:both;content:""}
+.login_sns_inner ul li{position:relative;display:table-cell;width:33.33%;padding:20px 10px 20px 65px;border:1px solid #9fa0a0;border-left:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.login_sns_inner ul li a{font-size:15px;color:#495057;line-height:18px}
+.login_sns_inner ul li:first-of-type{border-left:1px solid #9fa0a0}
+.login_sns_inner ul li img{position:absolute;left:20px;top:22px}
+
+
+#login_btm{margin-top:35px}
+.login_btm_inner{text-align:center}
+.login_btm_inner ul li{position:relative;display:inline-block;padding-left:7px;margin-left:7px}
+.login_btm_inner ul li:first-of-type{margin-left:0;padding-left:0;}
+.login_btm_inner ul li:first-of-type:before{position:absolute;right:0;top:50%;margin-top:-8px;margin-right:-10px;width:1px;height:16px;background:#e6e9f0;content:""}
+.login_btm_inner ul li a{display:block;font-size:18px;color:#9fa0a0}
+.mem_time{margin-top:5px;text-align:center;font-size:16px;color:#9fa0a0;text-decoration:underline}
+}
+
+/* 로그인 모바일 -----------------------------------------------------------------*/
+@media (max-width:768px){
+#mb_login {margin:0 auto;padding-top:0 15px;width:auto}
+#mb_login #login_fs {position:relative;margin:0;padding:0 15px}
+#mb_login #login_fs > input[type=text],
+#mb_login #login_fs > input[type=password]{display:block;width:100%;height:40px;font-size:14px}
+#mb_login #login_fs .login_pw {margin-top:20px}
+#mb_login #login_fs .btn_submit{line-height:58px;font-size:15px}
+#mb_login .login_auto{margin-top:15px;font-size:15px;color:#495057}
+
+#login_sns{width:auto;margin-top:35px;padding:0 15px}
+.login_sns_inner ul{display:table;width:100%}
+.login_sns_inner ul:after{display:block;clear:both;content:""}
+.login_sns_inner ul li{position:relative;display:block;width:100%;padding:15px 10px;text-align:center;border:1px solid #ededed;border-top:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.login_sns_inner ul li:first-of-type{border-top:1px solid #ededed}
+.login_sns_inner ul li a{font-size:15px;color:#495057;line-height:18px}
+.login_sns_inner ul li:first-of-type{border-left:1px solid #ededed}
+.login_sns_inner ul li img{position:static;left:auto;top:auto;padding-right:20px;width:30px}
+.br_pc{display:inline}
+
+#login_btm{margin-top:35px}
+.login_btm_inner{text-align:center}
+.login_btm_inner ul li{position:relative;display:inline-block;padding-left:7px;margin-left:7px}
+.login_btm_inner ul li:first-of-type{margin-left:0;padding-left:0;}
+.login_btm_inner ul li:first-of-type:before{position:absolute;right:0;top:50%;margin-top:-8px;margin-right:-10px;width:1px;height:16px;background:#e6e9f0;content:""}
+.login_btm_inner ul li a{font-size:16px}
+.mem_time{font-size:14px}
+}
+
+
+/* 비밀번호 찾기 */
+#find_info {margin:0 auto;padding-top:50px;width:580px;text-align:center}
+#find_info #info_fs {position:relative;margin:0}
+#find_info #info_fs > input[type=text],
+#find_info #info_fs > input[type=password]{display:block;width:100%;height:50px;margin-top:40px;text-indent:15px;font-size:15px;border:0;border-bottom:1px solid #212529;background:#fff !important}
+#mb_confirm_id{display:block;width:100%;line-height:50px;text-align:left;text-indent:15px;font-size:15px;border:0;border-bottom:1px solid #212529;background:#fff !important}
+#find_info #info_fs .btn_submit{width:100%;line-height:80px;margin:40px 0 0 0;padding:0;border-radius:0;font-size:24px;color:#212529}
+#find_info .login_auto{margin-top:15px;font-size:18px;color:#495057}
+#find_info #info_fs p{margin-bottom:50px;text-align:center;font-size:16px;color:#9fa0a0}
+#find_info #captcha{margin:40px auto 0}
+#find_info .btn_confirm {margin:40px 0 0 0}
+
+/* 비밀번호 찾기 태블릿 -----------------------------------------------------------------*/
+
+
+/* 비밀번호 찾기 모바일 -----------------------------------------------------------------*/
+@media (max-width:768px){
+#find_info {padding-top:50px;width:auto}
+#find_info #info_fs {position:relative;margin:0}
+#find_info #info_fs > input[type=text]{display:block;width:100%;height:40px;text-indent:10px;font-size:15px}
+#find_info #info_fs > input[type=password]{display:block;width:100%;height:40px;margin-top:20px;text-indent:10px;font-size:15px}
+#find_info #info_fs .btn_submit{width:100%;line-height:80px;margin:40px 0 0 0;padding:0;border-radius:0;font-size:24px;color:#212529}
+#find_info .login_auto{margin-top:15px;font-size:18px;color:#495057}
+#find_info #info_fs p{margin-bottom:50px;text-align:center;font-size:15px;color:#9fa0a0}
+#find_info #captcha{margin:40px auto 0}
+#find_info .btn_confirm {margin:40px 0 0 0}
+#find_info .btn_confirm a,
+#find_info .btn_confirm input,
+#find_info .btn_confirm button{display:inline-block;min-width:130px;width:45%}
